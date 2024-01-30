@@ -1,0 +1,89 @@
+version: 2
+
+models:
+  - name: fct_balanco
+    description: Tabela fato balanço bancário.
+    columns:
+      - name: sk_balanco
+        description: Chave primária da fato balanço.
+        tests:
+          - not_null
+          - unique
+      - name: id_transacao
+        description: Coluna com o ID da transação.
+        tests:
+          - not_null
+      - name: id_conta
+        description: Coluna com o ID da conta.
+        tests:
+          - not_null
+      - name: id_cliente
+        description: Coluna com o ID do cliente.
+        tests:
+          - not_null
+      - name: id_agencia
+        description: Coluna com o ID da agência.
+        tests:
+          - not_null
+      - name: id_colaborador
+        description: Coluna com o ID do colaborador.
+        tests:
+          - not_null
+      - name: id_proposta
+        description: Coluna com os IDs da proposta.
+      - name: nome_cliente
+        description: Coluna com o nome do cliente.
+        tests:
+          - not_null
+      - name: nome_colaborador
+        description: Coluna com o nome do colaborador.
+        tests:
+          - not_null
+      - name: nome_agencia
+        description: Coluna com o nome da agência.
+        tests:
+          - not_null
+      - name: cidade_agencia
+        description: Coluna com o nome da cidade da agência.
+        tests:
+          - not_null
+      - name: uf_agencia
+        description: Coluna com o UF da agência.
+        tests:
+          - not_null
+      - name: tipo_conta
+        description: Coluna com o tipo da conta.
+        tests:
+          - not_null
+      - name: tipo_agencia
+        description: Coluna com o tipo da agência.
+        tests:
+          - not_null
+      - name: tipo_transacao
+        description: Coluna com o tipo da transação.
+        tests:
+          - not_null
+      - name: valor_transacao
+        description: Coluna com o valor da transação.
+        tests:
+          - not_null
+      - name: saldo_total_conta
+        description: Coluna com o saldo total da conta.
+        tests:
+          - not_null
+      - name: saldo_disponivel_conta
+        description: Coluna com o saldo disponível da conta.
+        tests:
+          - not_null
+      - name: data_transacao
+        description: Coluna com a data da transação da conta.
+        tests:
+          - not_null
+      - name: saldo_total_conta_ponderado
+        description: Coluna com o saldo total da conta ponderado.
+        tests:
+          - not_null
+      - name: saldo_disponivel_conta_ponderado
+        description: Coluna com o saldo disponível da conta ponderado.
+        tests:
+          - not_null
