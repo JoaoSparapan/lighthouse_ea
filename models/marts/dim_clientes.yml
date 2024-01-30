@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: dim_clientes
+    description: Tabela dimensão clientes.
+    columns:
+      - name: id_cliente
+        description: Coluna com ID do cliente.
+        tests:
+          - unique
+          - not_null
+      - name: nome_completo_cliente
+        description: Coluna com o nome do cliente.
+        tests:
+          - not_null
+      - name: tipo_cliente
+        description: Coluna com o tipo do cliente.
+        tests:
+          - not_null
+      - name: data_inclusao_cliente
+        description: Coluna com a data de inclusão do cliente.
+        tests:
+          - not_null
+      - name: data_nascimento_cliente
+        description: Coluna com a data de nascimento do cliente.
+        tests:
+          - not_null
+      - name: endereco_cliente
+        description: Coluna com o endereço do cliente.
+        tests:
+          - not_null
+      - name: cep_cliente
+        description: Coluna com o CEP do cliente.
+        tests:
+          - not_null
+
+
+
+
+
