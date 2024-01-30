@@ -115,6 +115,7 @@ with
             , transacoes.data_transacao
         from transacoes
         left join cliente_conta_joined cc on transacoes.id_conta = cc.id_conta
+        where cc.id_cliente is not null
     )
 
     , transformacao as (
