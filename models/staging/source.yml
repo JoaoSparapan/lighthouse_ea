@@ -138,3 +138,56 @@ sources:
           description: Coluna com a data do último lançamento da conta.
           tests:
             - not_null
+    - name: propostas_credito
+      columns:
+        - name: cod_proposta
+          description: Coluna com o código da proposta.
+          tests:
+            - unique
+            - not_null
+        - name: cod_cliente
+          description: Coluna com o código do cliente.
+          tests:
+            - not_null
+        - name: cod_colaborador
+          description: Coluna com o código do colaborador.
+          tests:
+            - not_null
+        - name: data_entrada_proposta
+          description: Coluna com a data de entrada da proposta.
+          tests:
+            - not_null
+        - name: taxa_juros_mensal
+          description: Coluna com a taxa de juros mensal da proposta.
+          tests:
+            - not_null
+        - name: valor_proposta
+          description: Coluna com o valor total da proposta.
+          tests:
+            - not_null
+        - name: valor_financiamento
+          description: Coluna com o valor do financiamento da proposta.
+          tests:
+            - not_null
+        - name: valor_entrada
+          description: Coluna com o valor de entrada da proposta.
+          tests:
+            - not_null
+        - name: valor_prestacao
+          description: Coluna com o valor da prestação da proposta.
+          tests:
+            - not_null
+        - name: quantidade_parcelas
+          description: Coluna com a quantidade de parcelas da proposta.
+          tests:
+            - not_null
+        - name: carencia
+          description: Coluna com a carência da proposta.
+          tests:
+            - not_null
+        - name: status_proposta
+          description: Coluna com o status da proposta.
+          tests:
+            - not_null
+
+
