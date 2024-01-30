@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_contas
+    description: Tabela dimensão contas.
+    columns:
+      - name: id_conta
+        description: Coluna com o ID da conta.
+        tests:
+          - unique
+          - not_null
+      - name: id_cliente_conta
+        description: Coluna com o ID do usuário da conta.
+        tests:
+          - not_null
+      - name: id_agencia_conta
+        description: Coluna com o ID da agência da conta.
+        tests:
+          - not_null
+      - name: id_colaborador_conta
+        description: Coluna com o ID do colaborador da conta.
+        tests:
+          - not_null
+      - name: tipo_conta
+        description: Coluna com o tipo da conta.
+        tests:
+          - not_null
+      - name: data_abertura_conta
+        description: Coluna com a data de abertura da conta.
+        tests:
+          - not_null
+      - name: saldo_total_conta
+        description: Coluna com o saldo total da conta.
+        tests:
+          - not_null
+      - name: saldo_disponivel_conta
+        description: Coluna com o saldo disponível da conta.
+        tests:
+          - not_null
+      - name: data_ultimo_lancamento_conta
+        description: Coluna com a data do último lançamento da conta.
+        tests:
+          - not_null
