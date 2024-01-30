@@ -1,7 +1,7 @@
 with
     fonte_clientes as (
         select
-            cast(cod_cliente as string) as id_cliente
+            cast(cod_cliente as int) as id_cliente
             , cast(primeiro_nome as string) as nome_cliente
             , cast(ultimo_nome as string) as sobrenome_cliente
             , cast(tipo_cliente as string) as tipo_cliente
