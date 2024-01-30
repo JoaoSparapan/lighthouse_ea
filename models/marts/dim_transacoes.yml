@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: dim_transacoes
+    description: Tabela dimensão transações.
+    columns:
+        - name: id_transacao
+          description: Coluna com ID da transação.
+          tests:
+            - unique
+            - not_null
+        - name: id_conta
+          description: Coluna com o ID da conta envolvida na transação.
+          tests:
+            - not_null
+        - name: data_transacao
+          description: Coluna com a data da transação.
+          tests:
+            - not_null
+        - name: tipo_transacao
+          description: Coluna com o nome da transação.
+          tests:
+            - not_null
+        - name: valor_transacao
+          description: Coluna com o valor da transação.
+          tests:
+            - not_null
+
+            
+
+
+
