@@ -40,7 +40,7 @@ sources:
     - name: clientes
       columns:
         - name: cod_cliente
-          description: Coluna com o código dos cliente.
+          description: Coluna com o código do cliente.
           tests:
             - unique
             - not_null
@@ -72,3 +72,19 @@ sources:
           description: Coluna com o CEP do cliente.
           tests:
             - not_null
+    - name: colaboradores
+      columns:
+        - name: cod_colaborador
+          description: Coluna com o código do colaborador.
+          tests:
+            - unique
+            - not_null
+        - name: primeiro_nome
+          description: Coluna com o nome do colaborador.
+          tests:
+            - not_null
+        - name: ultimo_nome
+          description: Coluna com o sobrenome do colaborador.
+          tests:
+            - not_null
+    

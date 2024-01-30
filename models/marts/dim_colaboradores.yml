@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_colaboradores
+    description: Tabela dimensão colaboradores.
+    columns:
+      - name: id_colaborador
+        description: Coluna com o ID do colaborador.
+        tests:
+          - unique
+          - not_null          
+      - name: nome_completo_colaborador
+        description: Coluna com o nome do colaborador.
+        tests:
+          - not_null   
