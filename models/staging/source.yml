@@ -87,4 +87,15 @@ sources:
           description: Coluna com o sobrenome do colaborador.
           tests:
             - not_null
-    
+    - name: colaborador_agencia
+      columns:
+        - name: cod_colaborador
+          description: Coluna com o código do colaborador.
+          tests:
+            - unique
+            - not_null
+      columns:
+        - name: cod_agencia
+          description: Coluna com o código da agência.
+          tests:
+            - not_null

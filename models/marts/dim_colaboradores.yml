@@ -8,7 +8,11 @@ models:
         description: Coluna com o ID do colaborador.
         tests:
           - unique
-          - not_null          
+          - not_null
+      - name: id_agencia
+        description: Coluna com o ID da agência do colaborador.
+        tests:
+          - not_null        
       - name: nome_completo_colaborador
         description: Coluna com o nome do colaborador.
         tests:
