@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_agencias
+    description: Tabela dimensão agências.
+    columns:
+      - name: id_agencia
+        description: Chave primária da dimensão agência.
+        tests:
+          - unique
+          - not_null
+      - name: nome_agencia
+        description: Coluna com o nome da agência.
+        tests:
+          - not_null
+      - name: endereco_agencia
+        description: Coluna com o endereço da agência.
+        tests:
+          - not_null
+      - name: cidade_agencia
+        description: Coluna com a cidade da agência.
+        tests:
+          - not_null
+      - name: uf_agencia
+        description: Coluna com o UF da agência.
+        tests:
+          - not_null
+      - name: data_abertura_agencia
+        description: Coluna com a data de abertura da agência.
+        tests:
+          - not_null
+      - name: tipo_agencia
+        description: Coluna com o tipo da agência.
+        tests:
+          - not_null
+          - accepted_values:
+                values: ['Física', 'Digital']
+      
+
+
+
+
+
