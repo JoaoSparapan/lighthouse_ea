@@ -182,7 +182,7 @@ sources:
           tests:
             - not_null
         - name: carencia
-          description: Coluna com a carência da proposta.
+          description: Coluna com o prazo de carência da proposta.
           tests:
             - not_null
         - name: status_proposta

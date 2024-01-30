@@ -3,3 +3,58 @@ version: 2
 models:
   - name: dim_proposta_credito
     description: Tabela dimensão com propostas de crédito.
+    columns:
+      - name: id_proposta
+        description: Coluna com o código da proposta.
+        tests:
+          - unique
+          - not_null
+      - name: id_cliente
+        description: Coluna com o código do cliente.
+        tests:
+          - not_null
+      - name: id_colaborador
+        description: Coluna com o código do colaborador.
+        tests:
+          - not_null
+      - name: data_entrada_proposta
+        description: Coluna com a data de entrada da proposta.
+        tests:
+          - not_null
+      - name: taxa_juros_mes_proposta
+        description: Coluna com a taxa de juros mensal da proposta.
+        tests:
+          - not_null
+      - name: valor_total_proposta
+        description: Coluna com o valor total da proposta.
+        tests:
+          - not_null
+      - name: valor_financiamento_proposta
+        description: Coluna com o valor do financiamento da proposta.
+        tests:
+          - not_null
+      - name: valor_entrada_proposta
+        description: Coluna com o valor de entrada da proposta.
+        tests:
+          - not_null
+      - name: valor_prestacao_proposta
+        description: Coluna com o valor da prestação da proposta.
+        tests:
+          - not_null
+      - name: quantidade_parcelas_proposta
+        description: Coluna com a quantidade de parcelas da proposta.
+        tests:
+          - not_null
+      - name: prazo_carencia_proposta
+        description: Coluna com o prazo de carência da proposta.
+        tests:
+          - not_null
+      - name: status_proposta
+        description: Coluna com o status da proposta.
+        tests:
+          - not_null
+
+
+
+
+

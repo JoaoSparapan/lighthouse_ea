@@ -11,7 +11,7 @@ with
             , cast(valor_entrada as numeric) as valor_entrada_proposta
             , cast(valor_prestacao as numeric) as valor_prestacao_proposta
             , cast(quantidade_parcelas as int) as quantidade_parcelas_proposta
-            , cast(carencia as int) as carencia_proposta
+            , cast(carencia as int) as prazo_carencia_proposta
             , cast(status_proposta as string) as status_proposta
         from {{ source('erp', 'propostas_credito') }}
     )
