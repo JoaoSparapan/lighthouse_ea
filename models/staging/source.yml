@@ -37,3 +37,38 @@ sources:
             - not_null
             - accepted_values:
                 values: ['Física', 'Digital']
+    - name: clientes
+      columns:
+        - name: cod_cliente
+          description: Coluna com o código dos cliente.
+          tests:
+            - unique
+            - not_null
+        - name: primeiro_nome
+          description: Coluna com o nome do cliente.
+          tests:
+            - not_null
+        - name: ultimo_nome
+          description: Coluna com o último nome do cliente.
+          tests:
+            - not_null
+        - name: tipo_cliente
+          description: Coluna com o tipo do cliente.
+          tests:
+            - not_null
+        - name: data_inclusao
+          description: Coluna com a data de inclusão do cliente.
+          tests:
+            - not_null
+        - name: data_nascimento
+          description: Coluna com a data de nascimento do cliente.
+          tests:
+            - not_null
+        - name: endereco
+          description: Coluna com o endereço do cliente.
+          tests:
+            - not_null
+        - name: cep
+          description: Coluna com o CEP do cliente.
+          tests:
+            - not_null
