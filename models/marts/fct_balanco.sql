@@ -122,7 +122,7 @@ with
             *
             , saldo_total_conta/count(*) over(partition by id_conta) as saldo_total_conta_ponderado
             , saldo_disponivel_conta/count(*) over(partition by id_conta) as saldo_disponivel_conta_ponderado
-        from transacoes_joined where id_conta=53
+        from transacoes_joined
     )
 
 select * from transformacao
