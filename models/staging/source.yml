@@ -1,0 +1,39 @@
+version: 2
+sources:
+  - name: erp
+    description: ERP do BanVic
+    schema: dbt_lighthousejm
+    tables:
+    - name: agencias
+      columns:
+        - name: cod_agencia
+          description: Coluna com o código dos países.
+          tests:
+            - unique
+            - not_null
+        - name: nome
+          description: Coluna com o nome da agência.
+          tests:
+            - not_null
+        - name: endereco
+          description: Coluna com o endereço da agência.
+          tests:
+            - not_null
+        - name: cidade
+          description: Coluna com a cidade da agência.
+          tests:
+            - not_null
+        - name: uf
+          description: Coluna com a UF da agência.
+          tests:
+            - not_null
+        - name: data_abertura
+          description: Coluna com a data de abertura da agência.
+          tests:
+            - not_null
+        - name: tipo_agencia
+          description: Coluna com o tipo da agência.
+          tests:
+            - not_null
+            - accepted_values:
+                values: ['Física', 'Digital']
