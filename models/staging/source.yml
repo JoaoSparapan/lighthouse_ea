@@ -99,3 +99,42 @@ sources:
           description: Coluna com o código da agência.
           tests:
             - not_null
+    - name: contas
+      columns:
+        - name: num_conta
+          description: Coluna com o código da conta.
+          tests:
+            - unique
+            - not_null
+        - name: cod_cliente
+          description: Coluna com o código do cliente da conta.
+          tests:
+            - not_null
+        - name: cod_agencia
+          description: Coluna com o código da agência da conta.
+          tests:
+            - not_null
+        - name: cod_colaborador
+          description: Coluna com o código do colaborador da conta.
+          tests:
+            - not_null
+        - name: tipo_conta
+          description: Coluna com o tipo da conta.
+          tests:
+            - not_null
+        - name: data_abertura
+          description: Coluna com a data de abertura da conta.
+          tests:
+            - not_null
+        - name: saldo_total
+          description: Coluna com o saldo total da conta.
+          tests:
+            - not_null
+        - name: saldo_disponivel
+          description: Coluna com o saldo disponível da conta.
+          tests:
+            - not_null
+        - name: data_ultimo_lancamento
+          description: Coluna com a data do último lançamento da conta.
+          tests:
+            - not_null
