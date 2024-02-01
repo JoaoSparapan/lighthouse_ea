@@ -5,6 +5,7 @@ sources:
     schema: dbt_lighthousejm
     tables:
     - name: agencias
+      description: Staging da tabela agências.
       columns:
         - name: cod_agencia
           description: Coluna com o código dos países.
@@ -38,6 +39,7 @@ sources:
             - accepted_values:
                 values: ['Física', 'Digital']
     - name: clientes
+      description: Staging da tabela clientes.
       columns:
         - name: cod_cliente
           description: Coluna com o código do cliente.
@@ -73,6 +75,7 @@ sources:
           tests:
             - not_null
     - name: colaboradores
+      description: Staging da tabela colaboradores.
       columns:
         - name: cod_colaborador
           description: Coluna com o código do colaborador.
@@ -88,18 +91,19 @@ sources:
           tests:
             - not_null
     - name: colaborador_agencia
+      description: Relacionamento entre tabela colaborador e tabela agência.
       columns:
         - name: cod_colaborador
           description: Coluna com o código do colaborador.
           tests:
             - unique
             - not_null
-      columns:
         - name: cod_agencia
           description: Coluna com o código da agência.
           tests:
             - not_null
     - name: contas
+      description: Staging da tabela contas.
       columns:
         - name: num_conta
           description: Coluna com o código da conta.
@@ -139,6 +143,7 @@ sources:
           tests:
             - not_null
     - name: propostas_credito
+      description: Staging da tabela propostas_credito.
       columns:
         - name: cod_proposta
           description: Coluna com o código da proposta.
